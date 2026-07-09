@@ -835,3 +835,91 @@ strong {
     font-size: 4.1rem;
   }
 }
+
+/* Final mobile hero-map override: prevents node stacking caused by nth-of-type selectors */
+@media (max-width: 640px) {
+  .hero .hero-map {
+    min-height: 660px !important;
+    margin-top: 18px;
+  }
+
+  .hero .hero-map .node,
+  .hero .hero-map .node-large {
+    width: 104px !important;
+    height: 104px !important;
+    box-shadow:
+      0 0 0 8px var(--white),
+      0 0 0 10px var(--orange),
+      0 0 28px var(--orange-glow) !important;
+  }
+
+  .hero .hero-map .node span {
+    font-size: 0.65rem !important;
+    letter-spacing: 0.07em;
+    line-height: 1.12;
+  }
+
+  .hero .hero-map .node.node-bsha {
+    top: 46px !important;
+    left: 34px !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 5 !important;
+  }
+
+  .hero .hero-map .node.node-patient {
+    top: 46px !important;
+    right: 34px !important;
+    left: auto !important;
+    bottom: auto !important;
+    z-index: 5 !important;
+  }
+
+  .hero .hero-map .node.node-prior {
+    top: 218px !important;
+    left: 34px !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 5 !important;
+  }
+
+  .hero .hero-map .node.node-revenue {
+    top: 218px !important;
+    right: 34px !important;
+    left: auto !important;
+    bottom: auto !important;
+    z-index: 5 !important;
+  }
+
+  .hero .hero-map .connector-one {
+    top: 98px !important;
+    left: 146px !important;
+    width: 118px !important;
+    transform: rotate(0deg) !important;
+    opacity: 0.5 !important;
+  }
+
+  .hero .hero-map .connector-two {
+    top: 174px !important;
+    left: 102px !important;
+    width: 150px !important;
+    transform: rotate(72deg) !important;
+    opacity: 0.45 !important;
+  }
+
+  .hero .hero-map .connector-three {
+    top: 270px !important;
+    right: 146px !important;
+    width: 118px !important;
+    transform: rotate(0deg) !important;
+    opacity: 0.5 !important;
+  }
+
+  .hero .hero-map .insight-card {
+    top: auto !important;
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 24px !important;
+    z-index: 6 !important;
+  }
+}
