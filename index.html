@@ -9,6 +9,112 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&family=Allura&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero-map .node-bsha {
+      top: 78px;
+      left: 54px;
+      right: auto;
+      bottom: auto;
+    }
+
+    .hero-map .node-patient {
+      top: 72px;
+      right: 58px;
+      left: auto;
+      bottom: auto;
+    }
+
+    .hero-map .node-prior {
+      top: 274px;
+      left: 108px;
+      right: auto;
+      bottom: auto;
+    }
+
+    .hero-map .node-revenue {
+      right: 74px;
+      bottom: 70px;
+      top: auto;
+      left: auto;
+    }
+
+    @media (max-width: 640px) {
+      .hero-map {
+        min-height: 690px;
+      }
+
+      .hero-map .node,
+      .hero-map .node-large {
+        width: 108px;
+        height: 108px;
+        box-shadow:
+          0 0 0 8px var(--white),
+          0 0 0 10px var(--orange),
+          0 0 28px var(--orange-glow);
+      }
+
+      .hero-map .node span {
+        font-size: 0.68rem;
+        letter-spacing: 0.07em;
+      }
+
+      .hero-map .node-bsha {
+        top: 38px;
+        left: 28px;
+        right: auto;
+        bottom: auto;
+      }
+
+      .hero-map .node-patient {
+        top: 64px;
+        right: 30px;
+        left: auto;
+        bottom: auto;
+      }
+
+      .hero-map .node-prior {
+        top: 232px;
+        left: 36px;
+        right: auto;
+        bottom: auto;
+      }
+
+      .hero-map .node-revenue {
+        top: 252px;
+        right: 38px;
+        left: auto;
+        bottom: auto;
+      }
+
+      .connector-one {
+        width: 130px;
+        top: 102px;
+        left: 130px;
+        transform: rotate(8deg);
+      }
+
+      .connector-two {
+        width: 125px;
+        top: 208px;
+        left: 112px;
+        transform: rotate(62deg);
+      }
+
+      .connector-three {
+        width: 118px;
+        top: 306px;
+        right: 120px;
+        transform: rotate(-16deg);
+      }
+
+      .insight-card {
+        left: 20px;
+        right: 20px;
+        bottom: 24px;
+        top: auto;
+      }
+    }
+  </style>
 </head>
 <body>
   <main class="page-shell">
@@ -23,13 +129,13 @@
         </div>
       </div>
       <div class="hero-map" aria-label="Niche system map">
-        <div class="node node-large"><span>BSHA<br>Student</span></div>
+        <div class="node node-large node-bsha"><span>BSHA<br>Student</span></div>
         <div class="connector connector-one"></div>
-        <div class="node"><span>Patient<br>Access</span></div>
+        <div class="node node-patient"><span>Patient<br>Access</span></div>
         <div class="connector connector-two"></div>
-        <div class="node"><span>Prior<br>Auth</span></div>
+        <div class="node node-prior"><span>Prior<br>Auth</span></div>
         <div class="connector connector-three"></div>
-        <div class="node"><span>Revenue<br>Cycle</span></div>
+        <div class="node node-revenue"><span>Revenue<br>Cycle</span></div>
         <div class="insight-card">
           <span class="insight-label">Core promise</span>
           <strong>No experience?</strong>
